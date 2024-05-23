@@ -2,19 +2,20 @@
 import Profile from "@/images/Profile";
 import Plus from "@/images/Plus";
 import Geldii from "@/images/Geldi";
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import { useState } from "react";
 
 const Navbar = ({ onClick }) => {
+    const isStatus = usePathname()
     const router = useRouter();
-    const [isDashboard, setIsDashboard] = useState(true)
+    const [ isDashboard, setIsDashboard ] = useState(true)
     const handler = (value) => setIsDashboard(value)
     const dashboard = () => {
         router.push("/dashboard");
         handler(true)
     };
     const recording = () => {
-        router.push("/record");
+        router.push("/records");
         handler(false)
     };
     return (
@@ -22,14 +23,16 @@ const Navbar = ({ onClick }) => {
             <div className="flex max-w-screen-xl justify-between mx-auto items-center h-16">
                 <div className="flex gap-6 items-center">
                     <Geldii />
-                    {isDashboard ? <>
+                    { isDashboard ? 
+                    <>  
                         <button className="font-semibold" onClick={dashboard}>Dashboard</button>
-                        <button className="hover:font-semibold" onClick={recording}>Records</button>
-                    </> : 
-                       <>
-                        <button className="hover:font-semibold" onClick={dashboard}>Dashboard</button>
+                        <button onClick={recording}>Records</button>
+                    </> 
+                    :
+                    <>
+                        <button onClick={dashboard}>Dashboard</button>
                         <button className="font-semibold" onClick={recording}>Records</button>
-                       </>
+                    </>
                     }
                 </div>
                 <div className="flex gap-6 items-center leading-none">
