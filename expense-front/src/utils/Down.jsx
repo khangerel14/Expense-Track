@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
-import { Eye } from "../images/Eye"
-import { Nexted } from "../images/next"
+import { Eye, Nexted } from "@/images"
 import axios from "axios"
 import { v4 as uuidv4 } from "uuid"
 
