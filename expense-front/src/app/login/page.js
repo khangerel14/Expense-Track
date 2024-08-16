@@ -1,5 +1,6 @@
 "use client";
-import Geld from "@/images/Geld";
+
+import { Geld } from "@/images";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

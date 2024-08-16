@@ -1,10 +1,12 @@
 "use client";
-import Geld from "@/images/Geld";
+
+import { Geld } from "@/images";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const Email = () => {
   const router = useRouter();
+  
   const moveRegis = () => {
     router.push("/dashboard")
   }

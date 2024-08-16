@@ -1,9 +1,7 @@
 import gelds from "../../public/Vector.svg"
 
-const Geldii = () => {
+export const Geldii = () => {
     return (
         <img src={gelds.src} alt="" />
     )
 }
-
-export default Geldii

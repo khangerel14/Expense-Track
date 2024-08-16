@@ -1,6 +1,6 @@
 "use client" 
-import Doll from "@/images/Dollar"
-import Geld from "@/images/Geld"
+
+import { Geld, Doll } from "@/images"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 const api = "http://localhost:8000/users"

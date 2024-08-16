@@ -1,8 +1,7 @@
-import blue from "../../public/bluen.svg"
-const Bluen = () => {
+import blue from "../../public/bluen.svg";
+
+export const Bluen = () => {
     return (
         <img src={blue.src} alt="" />
     )
 }
-
-export default Bluen

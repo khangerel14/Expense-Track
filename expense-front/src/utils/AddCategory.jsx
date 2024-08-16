@@ -1,7 +1,6 @@
 "use client"
 import { useState } from "react";
-import Close from "../images/X"
-import Homie from "@/images/Home";
+import { Close, Homie } from '@/images'
 import axios from "axios";
 
 const Category = ({ onClick }) => {

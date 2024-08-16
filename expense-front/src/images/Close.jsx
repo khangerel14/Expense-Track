@@ -1,9 +1,7 @@
 import xoo from "../../public/X.svg"
 
-const close = () => {
+export const Close = () => {
     return (
         <img src={xoo.src} alt="" />
     )
 }
-
-export default close

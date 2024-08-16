@@ -1,8 +1,7 @@
 import nemeh from "../../public/nemeh.svg";
  
-const plussed = () => {
+export const Plussed = () => {
     return (
         <img src={nemeh.src} alt="" />
     )
 }
-export default plussed

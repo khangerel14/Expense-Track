@@ -1,10 +1,4 @@
-import Bluen from "@/images/Blue"
-import { Downed } from "@/images/Down"
-import Green from "@/images/Gren"
-import { Upped } from "@/images/up"
-
-
-const { default: Visa } = require("@/images/Visa")
+import { Bluen, Downed, Green, Upped, Visa } from "@/images"
 
 const Card = () => {
     return (

@@ -1,7 +1,5 @@
 import lefted from "@/../../public/left.svg"
 
-const left = () => {
+export const Left = () => {
     <img src={lefted.src} alt="" />
 }
-
-export default left

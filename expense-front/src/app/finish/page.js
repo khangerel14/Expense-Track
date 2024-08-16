@@ -1,7 +1,7 @@
 "use client";
-import Done from "@/images/Done"
-import Geld from "@/images/Geld"
-import { useRouter } from "next/navigation"
+
+import { Done, Geld } from "@/images";
+import { useRouter } from "next/navigation";
 
 const Finish = () => {
     const router = useRouter();

@@ -1,5 +1,6 @@
-import Homie from "../images/Home"
-import { v4 as uuidv4 } from "uuid"
+import { Homie } from "@/images";
+import { v4 as uuidv4 } from "uuid";
+
 const rent = [
     {
         lere: "Lending & Renting",

@@ -5,7 +5,7 @@ import Lend from "@/utils/Records";
 
 export default function Home() {
   return (
-    <main className="bg-[#eff0f2] h-screen">
+    <main className="bg-[#eff0f2] h-full">
       <Navbar />
       <Card />
       <Expense />

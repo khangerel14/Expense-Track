@@ -1,9 +1,7 @@
 import doo from "../../public/done.svg";
  
-const Done = () => {
+export const Done = () => {
     return (
         <img src={doo.src} alt="" />
     )
 }
-
-export default Done

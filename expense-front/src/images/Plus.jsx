@@ -1,9 +1,7 @@
 import plus from "../../public/plus.svg"
 
-const Plus = () => {
+export const Plus = () => {
     return (
         <img src={plus.src} alt="" />
     )
 }
-
-export default Plus

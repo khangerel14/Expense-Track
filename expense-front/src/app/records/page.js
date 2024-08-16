@@ -1,15 +1,12 @@
 "use client";
-import Plus from "@/images/Plus"
-import Maped from "@/utils/Down"
-import Plussed from "@/images/Plussed"
-import Left from "@/images/Left"
-import DownTwo from "@/images/DownTwo"
-import Close from "../../images/X"
+
+import { Plus, Plussed, Left, DownTwo, Close } from "@/images";
 import { useState } from "react"
 import axios from "axios";
 import Category from "@/utils/AddCategory";
 import Build from "@/utils/List";
 import Navbar from "@/components/Navbar";
+import Maped from "@/utils/Down"
 
 const Record = () => {
     const [ name, setName ] = useState('');

@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import BarChart from "@/utils/BarChart"
 import Pie from "../utils/Pie"
 
